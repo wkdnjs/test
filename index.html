@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>오재논</title>
 </head>
+
 <body>
-    <img src ="www.png" width="100" height="100">
-    와우
-<audio autoplay="autoplay" controls="controls">
-    <source src="wow1.mp3" type="audio/mp3">
-  </audio>
+<audio id = "wow1" src="wow1.mp3"></audio>
+<audio id = "wow2" src="wow2.mp3"></audio>
+
+    <img src ="www.png" onclick="document.getElementById('wow1').play()">
+    <img src ="www1.png" onclick="document.getElementById('wow2').play()">
+
+
 </body>
   
 </html>
