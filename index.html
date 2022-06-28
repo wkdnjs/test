@@ -11,10 +11,45 @@
 <audio id = "wow1" src="wow1.mp3"></audio>
 <audio id = "wow2" src="wow2.mp3"></audio>
 
-    <img src ="www.png" onclick="document.getElementById('wow1').play()">
-    <img src ="www1.png" onclick="document.getElementById('wow2').play()">
+
+    <img id= "www" src ="www.png" onclick="janun()">
+    <img id= "www1" src ="www1.png" onclick="janun2()">
 
 
+
+    <script>
+        function janun() {
+            document.getElementById("www").src = "www2.png"
+            wow1.play()
+
+ a= 0;
+            var interval = setInterval(function() {
+
+a++
+  if (a === 1) {
+    document.getElementById("www").src = "www.png"
+    clearInterval(interval);
+  }
+}, 100);
+        }
+            </script>
+
+<script>
+    function janun2() {
+        document.getElementById("www1").src = "www2.png"
+        wow2.play()
+
+        a= 0;
+            var interval = setInterval(function() {
+
+a++
+  if (a === 1) {
+    document.getElementById("www1").src = "www1.png"
+    clearInterval(interval);
+  }
+}, 100);
+        }
+</script>
 </body>
   
 </html>
